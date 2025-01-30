@@ -1,0 +1,2 @@
+npx commitlint --edit $1
+npx check-for-secrets git-cached
