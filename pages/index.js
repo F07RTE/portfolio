@@ -1,4 +1,5 @@
 function Home() {
-  return <h1>Guilherme Forte Website</h1>;
+  return <>Website in construction...</>;
 }
+
 export default Home;
