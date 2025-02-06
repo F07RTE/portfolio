@@ -21,12 +21,46 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Link
-            href="/status"
-            style={{ color: "black", textDecoration: "none" }}
-          >
-            Status
-          </Link>
+          <NavLink>
+            <Link
+              href="/projects"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Projects
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link
+              href="/experience"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Experience
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link
+              href="/education"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Education
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link
+              href="/achievements"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Achievements
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link
+              href="/status"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Status
+            </Link>
+          </NavLink>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           <NavLink href="https://www.linkedin.com/in/guilherme-forte-b27696b9">

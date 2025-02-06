@@ -1,5 +1,5 @@
 function Home() {
-  return <>Website in construction...</>;
+  return <div>Website in construction...</div>;
 }
 
 export default Home;
