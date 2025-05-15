@@ -16,60 +16,25 @@ export default function Header() {
       <Container>
         <Navbar.Brand>
           <Link href="/" style={{ color: "black", textDecoration: "none" }}>
-            Guilherme Forte
+            <i className="bi bi-house-door" style={{ fontSize: "1.6rem" }}></i>
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <NavLink>
-            <Link
-              href="/projects"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              Projects
-            </Link>
-          </NavLink>
-          <NavLink>
-            <Link
-              href="/experience"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              Experience
-            </Link>
-          </NavLink>
-          <NavLink>
-            <Link
-              href="/education"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              Education
-            </Link>
-          </NavLink>
-          <NavLink>
-            <Link
-              href="/achievements"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              Achievements
-            </Link>
-          </NavLink>
-          <NavLink>
-            <Link
-              href="/status"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              Status
-            </Link>
-          </NavLink>
-        </Navbar.Collapse>
-        <Navbar.Collapse className="justify-content-end">
+        <div className="ms-auto d-flex align-items-center">
+          <a
+            href="/Guilherme_Forte_CV.pdf"
+            download
+            className="btn btn-outline-primary me-3"
+            style={{ fontWeight: 500 }}
+          >
+            Download CV
+          </a>
           <NavLink href="https://www.linkedin.com/in/guilherme-forte-b27696b9">
-            <Linkedin size={(30, 30)} color="black" />
+            <Linkedin size={30} color="black" />
           </NavLink>
           <NavLink href="https://github.com/F07RTE">
-            <Github size={(30, 30)} color="black" />
+            <Github size={30} color="black" />
           </NavLink>
-        </Navbar.Collapse>
+        </div>
       </Container>
     </Navbar>
   );
